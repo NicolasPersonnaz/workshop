@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+body {
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bea2e7+0,86b7e7+100 */
+background: #bea2e7; /* Old browsers */
+background: -moz-linear-gradient(top,  #bea2e7 0%, #86b7e7 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #bea2e7 0%,#86b7e7 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #bea2e7 0%,#86b7e7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bea2e7', endColorstr='#86b7e7',GradientType=0 ); /* IE6-9 */
+
+}
+.container ul {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1px 100px;
+  color: #fff;
+  font-size: 13px;
+}
+.container ul:before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  border-left: 2px dashed #fff;
+  
+}
+.container ul li {
+  position: relative;
+  margin-left: 30px ;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 14px;
+  border-radius: 6px;
+  width: 250px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .08)
+}
+.container ul li:not(:first-child) {
+  margin-top: 60px;
+}
+.container ul li > span {
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  left: -30px;
+  top: 0;
+  position: absolute;
+}
+.container ul li > span:before, .container ul li > span:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  background: #86b7e7;
+  left: -5px;
+  top: 0;
+}
+.container ul li span:after {
+  top: 100%;
+}
+.container ul li > div {
+  margin-left: 10px;  
+}
+.container div .title, .container div .type {
+  font-weight: 600;
+  font-size: 12px;
+}
+.container div .info {
+  font-weight: 300;
+}
+.container div > div {
+  margin-top: 5px;
+}
+.container span.number {
+  height: 100%;
+}
+.container span.number span {
+  position: absolute;
+  font-size: 10px;
+  left: -35px;
+  font-weight: bold;
+}
+.container span.number span:first-child {
+  top: 0;
+}
+.container span.number span:last-child {
+  top: 100%;
+}
+
+
+
+
+
+#navbar {
+	display: flex; /* utilisez un conteneur flexible */
+	justify-content: center; /* centre les éléments horizontalement */
+	align-items: center; /* centre les éléments verticalement */
+	width:100%;
+    height: 50px;
+    display:table;
+    margin:auto;
+	border-color: #FA2C49;
+  }
+  
+  #navlinks ul {
+	display: flex; /* utilisez un conteneur flexible */
+	justify-content: space-between; /* espace les éléments de manière égale */
+	align-items: center; /* centre les éléments verticalement */
+	list-style: none; /* supprimez les puces de liste */
+	padding: 0; /* supprimez les marges intérieures */
+  }
+  
+  #navlinks li {
+	margin: 0 10px; /* espacez les éléments horizontalement */
+	border: 2px solid rgb(255, 255, 255);
+	display: table-cell;
+    vertical-align: middle;
+    text-align:center;
+    width:20%;
+    background: linear-gradient(to right, #111 50%, rgb(220, 220, 220) 50%);
+	border-color: #ffffff;
+	margin-right: color : white ;
+    background-size: 200% 100%;
+    background-position:left top;
+    transition:all 1s ease;
+    -webkit-transition-delay:all 1s ease;
+    -moz-transition-delay:all 1s ease;
+    -ms-transition-delay:all 1s ease;
+    -o-transition-delay:all 1s ease;
+  }
+  
+  #navlinks a {
+	text-decoration: none; /* supprimez les soulignements de lien */
+	color: black; /* définissez une couleur pour les liens */
+	text-decoration:none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    display:block;
+    padding-top:10px;
+    padding-bottom:10px;
+    font: bold 12px/25px Arial, Helvetica;
+	border-color: #FA2C49;
+  }
+
+
+
+
+
+
+
+#navlinks li:hover{
+    background-position:right top;
+}
+
+#navlinks a:hover{
+    color:rgb(0, 0, 0);
+    transition:all 1s ease;
+    -webkit-transition-delay:all 1s ease;
+    -moz-transition-delay:all 1s ease;
+    -ms-transition-delay:all 1s ease;
+    -o-transition-delay:all 1s ease;
+}
